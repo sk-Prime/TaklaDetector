@@ -8,7 +8,8 @@ with open(dict_path,"rb") as dfile:
     bdict=pickle.load(dfile)
 
 for i in range(2,100,3):
-    word=bdict[i]
-    takla=converter.BanglaToTakla(word)
-    print(word,":",takla)
+    words=bdict[i].split()
+    for word in words:
+        takla=converter.BanglaToTakla(word)
+        print(word,":",takla)
     
