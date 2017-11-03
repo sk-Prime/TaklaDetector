@@ -1,12 +1,12 @@
 #-*- coding: utf-8-*-
-class MuradTakla(object):
+class Banglish(object):
     def __init__(self):
         self.chardict={'ষ্ঞ': 'shn', 'দ্ধ': 'ddh', 'ন্ধ': 'ndh', 'ক্ষ': 'kkh', 'ঞ্জ': 'ngj','ঙ্গ': 'ngg','ঋ': 'ri', 'জ্ঞ': 'gg', 'ঢ়': 'r', 'ক্ত': 'kt', 'ব্দ': 'bd', 'ট্ট': 'tt', 'স্ম': 'sm', 'গ্ন': 'gn', 'ন্দ': 'nd', 'ং': 'ng', 'ৎ': 'th', 'ভ': 'v', 'ষ': 's', 'শ': 'sh', 'ফ': 'f', 'ঢ': 'dh', 'ঠ': 'th', 'ধ': 'dh', 'থ': 'th', 'ঙ': 'ng', 'ঞ': 'ng', 'ঘ': 'gh', 'ন্ত': 'nt', 'ঝ': 'jh', 'খ': 'kh', 'ছ': 'ch', 'ঔ': 'ou', 'ঐ': 'oi', 'অ': 'o', 'আ': 'a', 'ই': 'i', 'ঈ': 'i', 'উ': 'u', 'ঊ': 'u', 'এ': 'e', 'ও': 'o', 'ক': 'k', 'গ': 'g', 'চ': 'ch', 'জ': 'j', 'ট': 't', 'ড': 'd', 'ণ': 'n', 'ত': 't', 'দ': 'd', 'ন': 'n', 'প': 'p', 'ব': 'b', 'ম': 'm', 'য': 'z', 'র': 'r', 'ল': 'l', 'স': 's', 'হ': 'h', 'ড়': 'r', 'য়': 'y'}
         self.vioel={'ি':'i','া': 'a', 'ী': 'i', 'ু': 'u', 'ূ': 'u', 'ৃ': 'rri', 'ে': 'e', 'ৈ': 'oi', 'ো': 'o', 'ৌ': 'ou'}
         self.vioel2="aeiou"
         self.homoPhone={"sh":"s"}
         
-    def BanglaToTakla(self,word):
+    def BanglaToBanglish(self,word):
         word=self.__correction(word)
         vioelSwitch=0
         taklaWord=""
